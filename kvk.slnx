@@ -1,6 +1,0 @@
-﻿<Solution>
-  <Project Path="Assembly-CSharp.csproj" />
-  <Project Path="HurricaneVR.Editor.csproj" />
-  <Project Path="HurricaneVR.Framework.csproj" />
-  <Project Path="Assembly-CSharp-Editor.csproj" />
-</Solution>

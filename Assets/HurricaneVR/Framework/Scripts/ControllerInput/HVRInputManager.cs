@@ -284,7 +284,7 @@ namespace HurricaneVR.Framework.ControllerInput
                 //https://docs.unity3d.com/ScriptReference/XR.XRDevice-isPresent.html
 
                 _displaySubsystems.Clear();
-                SubsystemManager.GetSubsystems<XRDisplaySubsystem>(_displaySubsystems);
+                SubsystemManager.GetInstances<XRDisplaySubsystem>(_displaySubsystems);
                 foreach (var xrDisplay in _displaySubsystems)
                 {
                     if (xrDisplay.running)
@@ -1195,7 +1195,7 @@ namespace HurricaneVR.Framework.ControllerInput
 
 #if USING_XR_MANAGEMENT
             var subsystems = new List<XRInputSubsystem>();
-            SubsystemManager.GetSubsystems<XRInputSubsystem>(subsystems);
+            SubsystemManager.GetInstances<XRInputSubsystem>(subsystems);
             Debug.Log("Found " + subsystems.Count + " input subsystems.");
 
             for (int i = 0; i < subsystems.Count; i++)

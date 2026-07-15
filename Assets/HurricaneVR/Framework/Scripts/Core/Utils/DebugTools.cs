@@ -24,16 +24,16 @@ namespace HurricaneVR.Framework.Core.Utils
             {
                 if (CapVelocity)
                 {
-                    var velocity = Rigidbody.linearVelocity;
+                    var velocity = Rigidbody.velocity;
                     velocity.x = Mathf.Clamp(velocity.x, -VelocityCap, VelocityCap);
                     velocity.y = Mathf.Clamp(velocity.y, -VelocityCap, VelocityCap);
                     velocity.z = Mathf.Clamp(velocity.z, -VelocityCap, VelocityCap);
-                    Rigidbody.linearVelocity = velocity;
+                    Rigidbody.velocity = velocity;
                 }
 
-                if (Rigidbody.linearVelocity.magnitude > MaxVelocity)
+                if (Rigidbody.velocity.magnitude > MaxVelocity)
                 {
-                    MaxVelocity = Rigidbody.linearVelocity.magnitude;
+                    MaxVelocity = Rigidbody.velocity.magnitude;
                 }
 
            

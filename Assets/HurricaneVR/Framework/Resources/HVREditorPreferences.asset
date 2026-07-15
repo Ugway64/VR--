@@ -11,6 +11,6 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f3adfb6cabe631f40a72c285abbb95d8, type: 3}
   m_Name: HVREditorPreferences
-  m_EditorClassIdentifier: HurricaneVR.Editor::HurricaneVR.Editor.HVREditorPreferences
+  m_EditorClassIdentifier: 
   _updatedDisplayedVersion: 2.9.3
   _doNotShowOpenXRQuest3Warning: 0

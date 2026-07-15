@@ -54,13 +54,13 @@ namespace HurricaneVR.Framework.Weapons.Bow
         {
             if (Flying)
             {
-                transform.forward = Vector3.Slerp(transform.forward, Rigidbody.linearVelocity.normalized, Time.deltaTime);
+                transform.forward = Vector3.Slerp(transform.forward, Rigidbody.velocity.normalized, Time.deltaTime);
             }
         }
 
         public virtual void FixedUpdate()
         {
-            if (Rigidbody.linearVelocity.sqrMagnitude < 1f)
+            if (Rigidbody.velocity.sqrMagnitude < 1f)
             {
                 Flying = false;
             }

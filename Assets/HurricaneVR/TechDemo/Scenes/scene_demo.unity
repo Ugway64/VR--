@@ -13,7 +13,7 @@ OcclusionCullingSettings:
 --- !u!104 &2
 RenderSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 10
+  serializedVersion: 9
   m_Fog: 0
   m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   m_FogMode: 3
@@ -42,8 +42,8 @@ RenderSettings:
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 13
-  m_BakeOnSceneLoad: 1
+  serializedVersion: 12
+  m_GIWorkflowMode: 0
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -66,6 +66,9 @@ LightmapSettings:
     m_LightmapParameters: {fileID: 111300000, guid: d45268bb1e333d94c838f3139988dd08, type: 2}
     m_LightmapsBakeMode: 1
     m_TextureCompression: 1
+    m_FinalGather: 0
+    m_FinalGatherFiltering: 1
+    m_FinalGatherRayCount: 256
     m_ReflectionCompression: 2
     m_MixedBakeMode: 2
     m_BakeBackend: 2
@@ -93,8 +96,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000002, guid: 52377eb071106ff43a3d844a10d62088, type: 2}
-  m_LightingSettings: {fileID: 4890085278179872738, guid: deb574669fd3b0f4290073b556412491, type: 2}
+  m_LightingDataAsset: {fileID: 0}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: 8a6a171dd1bb1754f8462f79015a954f, type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -140,16 +143,8 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 885885626495148005, guid: 6974999791dc8804fafee05e319aa932, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 885885626495148005, guid: 6974999791dc8804fafee05e319aa932, type: 3}
       propertyPath: m_IsActive
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 885885627402359447, guid: 6974999791dc8804fafee05e319aa932, type: 3}
-      propertyPath: m_Layer
-      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 885885627402359447, guid: 6974999791dc8804fafee05e319aa932, type: 3}
       propertyPath: m_IsActive
@@ -608,20 +603,12 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5601958841186109034, guid: 6974999791dc8804fafee05e319aa932, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5601958841186109034, guid: 6974999791dc8804fafee05e319aa932, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5601958841800100085, guid: 6974999791dc8804fafee05e319aa932, type: 3}
       propertyPath: m_IsActive
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5601958842363464472, guid: 6974999791dc8804fafee05e319aa932, type: 3}
-      propertyPath: m_Layer
-      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5601958842363464472, guid: 6974999791dc8804fafee05e319aa932, type: 3}
       propertyPath: m_IsActive
@@ -684,11 +671,11 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6369904553578287016, guid: 6974999791dc8804fafee05e319aa932, type: 3}
-      propertyPath: 'PoseNames.Array.data[0]'
+      propertyPath: PoseNames.Array.data[0]
       value: 'Primary: pose_relaxed'
       objectReference: {fileID: 0}
     - target: {fileID: 6369904553578287016, guid: 6974999791dc8804fafee05e319aa932, type: 3}
-      propertyPath: 'PoseNames.Array.data[1]'
+      propertyPath: PoseNames.Array.data[1]
       value: pose_fist
       objectReference: {fileID: 0}
     - target: {fileID: 6412964242602196437, guid: 6974999791dc8804fafee05e319aa932, type: 3}
@@ -862,134 +849,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3924027509387932073, guid: 6974999791dc8804fafee05e319aa932, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1862627868}
-    - targetCorrespondingSourceObject: {fileID: 885885627402359447, guid: 6974999791dc8804fafee05e319aa932, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1043874854}
-    - targetCorrespondingSourceObject: {fileID: 5601958842363464472, guid: 6974999791dc8804fafee05e319aa932, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1043874855}
-    - targetCorrespondingSourceObject: {fileID: 1667273949972879791, guid: 6974999791dc8804fafee05e319aa932, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 22373476}
-    - targetCorrespondingSourceObject: {fileID: 7328530352986279000, guid: 6974999791dc8804fafee05e319aa932, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 22373473}
-    - targetCorrespondingSourceObject: {fileID: 4890520115293397837, guid: 6974999791dc8804fafee05e319aa932, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 22373472}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6974999791dc8804fafee05e319aa932, type: 3}
---- !u!1 &22373468 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4890520115293397837, guid: 6974999791dc8804fafee05e319aa932, type: 3}
-  m_PrefabInstance: {fileID: 22373467}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &22373469 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7328530352986279000, guid: 6974999791dc8804fafee05e319aa932, type: 3}
-  m_PrefabInstance: {fileID: 22373467}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &22373470 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3924027509387932073, guid: 6974999791dc8804fafee05e319aa932, type: 3}
-  m_PrefabInstance: {fileID: 22373467}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &22373471 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1667273949972879791, guid: 6974999791dc8804fafee05e319aa932, type: 3}
-  m_PrefabInstance: {fileID: 22373467}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &22373472
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 22373468}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalCameraData
-  m_RenderShadows: 1
-  m_RequiresDepthTextureOption: 2
-  m_RequiresOpaqueTextureOption: 2
-  m_CameraType: 0
-  m_Cameras: []
-  m_RendererIndex: -1
-  m_VolumeLayerMask:
-    serializedVersion: 2
-    m_Bits: 1
-  m_VolumeTrigger: {fileID: 0}
-  m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
-  m_Antialiasing: 0
-  m_AntialiasingQuality: 2
-  m_StopNaN: 0
-  m_Dithering: 0
-  m_ClearDepth: 1
-  m_AllowXRRendering: 1
-  m_AllowHDROutput: 1
-  m_UseScreenCoordOverride: 0
-  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
-  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
-  m_RequiresDepthTexture: 0
-  m_RequiresColorTexture: 0
-  m_TaaSettings:
-    m_Quality: 3
-    m_FrameInfluence: 0.1
-    m_JitterScale: 1
-    m_MipBias: 0
-    m_VarianceClampScale: 0.9
-    m_ContrastAdaptiveSharpening: 0
-  m_Version: 2
---- !u!114 &22373473
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 22373469}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalCameraData
-  m_RenderShadows: 1
-  m_RequiresDepthTextureOption: 2
-  m_RequiresOpaqueTextureOption: 2
-  m_CameraType: 0
-  m_Cameras: []
-  m_RendererIndex: -1
-  m_VolumeLayerMask:
-    serializedVersion: 2
-    m_Bits: 1
-  m_VolumeTrigger: {fileID: 0}
-  m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
-  m_Antialiasing: 0
-  m_AntialiasingQuality: 2
-  m_StopNaN: 0
-  m_Dithering: 0
-  m_ClearDepth: 1
-  m_AllowXRRendering: 1
-  m_AllowHDROutput: 1
-  m_UseScreenCoordOverride: 0
-  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
-  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
-  m_RequiresDepthTexture: 0
-  m_RequiresColorTexture: 0
-  m_TaaSettings:
-    m_Quality: 3
-    m_FrameInfluence: 0.1
-    m_JitterScale: 1
-    m_MipBias: 0
-    m_VarianceClampScale: 0.9
-    m_ContrastAdaptiveSharpening: 0
-  m_Version: 2
 --- !u!114 &22373474 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3924027509007222391, guid: 6974999791dc8804fafee05e319aa932, type: 3}
@@ -1012,50 +873,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bccf1e5bfe81ea449669046dd363b91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &22373476
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 22373471}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalCameraData
-  m_RenderShadows: 1
-  m_RequiresDepthTextureOption: 2
-  m_RequiresOpaqueTextureOption: 2
-  m_CameraType: 0
-  m_Cameras: []
-  m_RendererIndex: -1
-  m_VolumeLayerMask:
-    serializedVersion: 2
-    m_Bits: 1
-  m_VolumeTrigger: {fileID: 0}
-  m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
-  m_Antialiasing: 0
-  m_AntialiasingQuality: 2
-  m_StopNaN: 0
-  m_Dithering: 0
-  m_ClearDepth: 1
-  m_AllowXRRendering: 1
-  m_AllowHDROutput: 1
-  m_UseScreenCoordOverride: 0
-  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
-  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
-  m_RequiresDepthTexture: 0
-  m_RequiresColorTexture: 0
-  m_TaaSettings:
-    m_Quality: 3
-    m_FrameInfluence: 0.1
-    m_JitterScale: 1
-    m_MipBias: 0
-    m_VarianceClampScale: 0.9
-    m_ContrastAdaptiveSharpening: 0
-  m_Version: 2
 --- !u!21 &36508617
 Material:
   serializedVersion: 8
@@ -1085,7 +902,6 @@ Material:
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
   m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!21 &107276214
 Material:
   serializedVersion: 8
@@ -1115,7 +931,6 @@ Material:
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
   m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!1001 &162314265
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1182,47 +997,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4871393619771843202, guid: 66d7fa8e3c407a24cb9a0001eb16e240, type: 3}
   m_PrefabInstance: {fileID: 162314265}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &168074121
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2912174324032118357}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 80c3459a626238148a4143ca5cd9706f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Oculus.VR::OVROverlayCanvas_TMPChanged
-  TargetCanvas: {fileID: 168074122}
---- !u!114 &168074122
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2912174324032118357}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee10491ef6d5d1d49a270cf6b09bdc19, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Oculus.VR::OVROverlayCanvas
-  _mipmapMode: 1
-  _dynamicResolution: 0
-  _redrawResolutionThreshold: 2147483647
-  rectTransform: {fileID: 2912174324032118356}
-  maxTextureSize: 2048
-  manualRedraw: 1
-  renderInterval: 1
-  renderIntervalFrameOffset: 0
-  superSample: 0
-  layer: 5
-  opacity: 1
-  shape: 0
-  curveRadius: 1
-  overlapMask: 0
-  compositionMode: 2
-  _overlayEnabled: 1
 --- !u!21 &180990277
 Material:
   serializedVersion: 8
@@ -1252,7 +1026,6 @@ Material:
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
   m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!1001 &181160230
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1348,7 +1121,6 @@ Material:
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
   m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!21 &203271103
 Material:
   serializedVersion: 8
@@ -1378,48 +1150,6 @@ Material:
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
   m_BuildTextureStacks: []
-  m_AllowLocking: 1
---- !u!114 &206712901
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2912174324032118341}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 80c3459a626238148a4143ca5cd9706f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Oculus.VR::OVROverlayCanvas_TMPChanged
-  TargetCanvas: {fileID: 206712902}
---- !u!114 &206712902
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2912174324032118341}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee10491ef6d5d1d49a270cf6b09bdc19, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Oculus.VR::OVROverlayCanvas
-  _mipmapMode: 1
-  _dynamicResolution: 0
-  _redrawResolutionThreshold: 2147483647
-  rectTransform: {fileID: 2912174324032118340}
-  maxTextureSize: 2048
-  manualRedraw: 1
-  renderInterval: 1
-  renderIntervalFrameOffset: 0
-  superSample: 0
-  layer: 5
-  opacity: 1
-  shape: 0
-  curveRadius: 1
-  overlapMask: 0
-  compositionMode: 2
-  _overlayEnabled: 1
 --- !u!1 &211835365
 GameObject:
   m_ObjectHideFlags: 0
@@ -1431,7 +1161,7 @@ GameObject:
   - component: {fileID: 211835366}
   - component: {fileID: 211835368}
   - component: {fileID: 211835367}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1515,23 +1245,20 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
-  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_TextWrappingMode: 1
+  m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
-  m_ActiveFontFeatures: 00000000
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
-  m_EmojiFallbackSupport: 1
   m_parseCtrlCharacters: 1
   m_isOrthographic: 1
   m_isCullingEnabled: 0
@@ -1586,7 +1313,6 @@ Material:
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
   m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!21 &228512862
 Material:
   serializedVersion: 8
@@ -1616,7 +1342,6 @@ Material:
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
   m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!1001 &239197986
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1716,7 +1441,6 @@ Material:
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
   m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!1001 &247731438
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2025,7 +1749,6 @@ Material:
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
   m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!21 &267843477
 Material:
   serializedVersion: 8
@@ -2055,7 +1778,6 @@ Material:
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
   m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!21 &280107757
 Material:
   serializedVersion: 8
@@ -2085,7 +1807,6 @@ Material:
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
   m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!1001 &302410827
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2247,7 +1968,6 @@ Material:
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
   m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!1001 &340594491
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2343,7 +2063,6 @@ Material:
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
   m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!1001 &365590001
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2841,7 +2560,6 @@ Material:
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
   m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!1001 &439084884
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2937,7 +2655,6 @@ Material:
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
   m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!1001 &446300564
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3099,7 +2816,6 @@ Material:
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
   m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!4 &490249674 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3074430196590707247, guid: e76b000d3626e294cad55ca93a191510, type: 3}
@@ -3134,7 +2850,6 @@ Material:
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
   m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!1001 &507648541
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3377,47 +3092,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d979b720b0ea0aa4fbee62ad582bea0d, type: 3}
---- !u!114 &592725502
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2912174324032118345}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 80c3459a626238148a4143ca5cd9706f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Oculus.VR::OVROverlayCanvas_TMPChanged
-  TargetCanvas: {fileID: 592725503}
---- !u!114 &592725503
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2912174324032118345}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee10491ef6d5d1d49a270cf6b09bdc19, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Oculus.VR::OVROverlayCanvas
-  _mipmapMode: 1
-  _dynamicResolution: 0
-  _redrawResolutionThreshold: 2147483647
-  rectTransform: {fileID: 2912174324032118344}
-  maxTextureSize: 2048
-  manualRedraw: 1
-  renderInterval: 1
-  renderIntervalFrameOffset: 0
-  superSample: 0
-  layer: 5
-  opacity: 1
-  shape: 0
-  curveRadius: 1
-  overlapMask: 0
-  compositionMode: 2
-  _overlayEnabled: 1
 --- !u!1001 &607362531
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3583,7 +3257,6 @@ Material:
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
   m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!1 &651925477
 GameObject:
   m_ObjectHideFlags: 0
@@ -3646,7 +3319,6 @@ Material:
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
   m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!1001 &667104539
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3742,7 +3414,6 @@ Material:
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
   m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!1001 &702118114
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3989,7 +3660,6 @@ Material:
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
   m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!1001 &725221272
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4085,7 +3755,6 @@ Material:
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
   m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!1001 &742792087
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4247,7 +3916,6 @@ Material:
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
   m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!114 &775067047 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2771146717889678480, guid: 58fd73742002bc743864492ebb663a4d, type: 3}
@@ -4288,48 +3956,6 @@ Material:
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
   m_BuildTextureStacks: []
-  m_AllowLocking: 1
---- !u!114 &793611144
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2912174324032118349}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 80c3459a626238148a4143ca5cd9706f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Oculus.VR::OVROverlayCanvas_TMPChanged
-  TargetCanvas: {fileID: 793611145}
---- !u!114 &793611145
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2912174324032118349}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee10491ef6d5d1d49a270cf6b09bdc19, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Oculus.VR::OVROverlayCanvas
-  _mipmapMode: 1
-  _dynamicResolution: 0
-  _redrawResolutionThreshold: 2147483647
-  rectTransform: {fileID: 2912174324032118348}
-  maxTextureSize: 2048
-  manualRedraw: 1
-  renderInterval: 1
-  renderIntervalFrameOffset: 0
-  superSample: 0
-  layer: 5
-  opacity: 1
-  shape: 0
-  curveRadius: 1
-  overlapMask: 0
-  compositionMode: 2
-  _overlayEnabled: 1
 --- !u!1001 &797754216
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4594,47 +4220,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6770214079390364125, guid: 9b4f1d9b3ce814143bb6f1a9ff1fd077, type: 3}
   m_PrefabInstance: {fileID: 842489667}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &847267205
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2912174324032118347}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 80c3459a626238148a4143ca5cd9706f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Oculus.VR::OVROverlayCanvas_TMPChanged
-  TargetCanvas: {fileID: 847267206}
---- !u!114 &847267206
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2912174324032118347}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee10491ef6d5d1d49a270cf6b09bdc19, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Oculus.VR::OVROverlayCanvas
-  _mipmapMode: 1
-  _dynamicResolution: 0
-  _redrawResolutionThreshold: 2147483647
-  rectTransform: {fileID: 2912174324032118346}
-  maxTextureSize: 2048
-  manualRedraw: 1
-  renderInterval: 1
-  renderIntervalFrameOffset: 0
-  superSample: 0
-  layer: 5
-  opacity: 1
-  shape: 0
-  curveRadius: 1
-  overlapMask: 0
-  compositionMode: 2
-  _overlayEnabled: 1
 --- !u!1001 &860130931
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5054,7 +4639,6 @@ Material:
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
   m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!4 &907227772 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 529973882854412800, guid: f5f5aa0010b0b8744b2035589713b4db, type: 3}
@@ -5159,7 +4743,6 @@ Material:
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
   m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!21 &934701538
 Material:
   serializedVersion: 8
@@ -5189,7 +4772,6 @@ Material:
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
   m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!1001 &938431965
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5268,8 +4850,7 @@ GameObject:
   - component: {fileID: 952133131}
   - component: {fileID: 952133128}
   - component: {fileID: 952133127}
-  - component: {fileID: 952133132}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5352,40 +4933,11 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
-  m_UseReflectionProbes: 0
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!114 &952133132
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 952133125}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee10491ef6d5d1d49a270cf6b09bdc19, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Oculus.VR::OVROverlayCanvas
-  _mipmapMode: 0
-  _dynamicResolution: 1
-  _redrawResolutionThreshold: 2147483647
-  rectTransform: {fileID: 952133126}
-  maxTextureSize: 2048
-  manualRedraw: 0
-  renderInterval: 1
-  renderIntervalFrameOffset: 0
-  superSample: 0
-  layer: 5
-  opacity: 2
-  shape: 0
-  curveRadius: 1
-  overlapMask: 0
-  compositionMode: 1
-  _overlayEnabled: 1
 --- !u!21 &953769566
 Material:
   serializedVersion: 8
@@ -5415,7 +4967,6 @@ Material:
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
   m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!21 &959773795
 Material:
   serializedVersion: 8
@@ -5445,7 +4996,6 @@ Material:
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
   m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!21 &963636419
 Material:
   serializedVersion: 8
@@ -5475,7 +5025,6 @@ Material:
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
   m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!1001 &973250261
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5571,7 +5120,6 @@ Material:
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
   m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!1001 &994601840
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6146,83 +5694,6 @@ Material:
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
   m_BuildTextureStacks: []
-  m_AllowLocking: 1
---- !u!1 &1043874850 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 885885627402359447, guid: 6974999791dc8804fafee05e319aa932, type: 3}
-  m_PrefabInstance: {fileID: 22373467}
-  m_PrefabAsset: {fileID: 0}
---- !u!224 &1043874851 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 885885627402359444, guid: 6974999791dc8804fafee05e319aa932, type: 3}
-  m_PrefabInstance: {fileID: 22373467}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1043874852 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5601958842363464472, guid: 6974999791dc8804fafee05e319aa932, type: 3}
-  m_PrefabInstance: {fileID: 22373467}
-  m_PrefabAsset: {fileID: 0}
---- !u!224 &1043874853 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 5601958842363464475, guid: 6974999791dc8804fafee05e319aa932, type: 3}
-  m_PrefabInstance: {fileID: 22373467}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1043874854
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1043874850}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee10491ef6d5d1d49a270cf6b09bdc19, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Oculus.VR::OVROverlayCanvas
-  _mipmapMode: 0
-  _dynamicResolution: 1
-  _redrawResolutionThreshold: 2147483647
-  rectTransform: {fileID: 1043874851}
-  maxTextureSize: 2048
-  manualRedraw: 0
-  renderInterval: 1
-  renderIntervalFrameOffset: 0
-  superSample: 0
-  layer: 5
-  opacity: 2
-  shape: 0
-  curveRadius: 1
-  overlapMask: 0
-  compositionMode: 1
-  _overlayEnabled: 1
---- !u!114 &1043874855
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1043874852}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee10491ef6d5d1d49a270cf6b09bdc19, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Oculus.VR::OVROverlayCanvas
-  _mipmapMode: 0
-  _dynamicResolution: 1
-  _redrawResolutionThreshold: 2147483647
-  rectTransform: {fileID: 1043874853}
-  maxTextureSize: 2048
-  manualRedraw: 0
-  renderInterval: 1
-  renderIntervalFrameOffset: 0
-  superSample: 0
-  layer: 5
-  opacity: 2
-  shape: 0
-  curveRadius: 1
-  overlapMask: 0
-  compositionMode: 1
-  _overlayEnabled: 1
 --- !u!21 &1050099889
 Material:
   serializedVersion: 8
@@ -6252,7 +5723,6 @@ Material:
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
   m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!21 &1067514838
 Material:
   serializedVersion: 8
@@ -6282,7 +5752,6 @@ Material:
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
   m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!21 &1074121627
 Material:
   serializedVersion: 8
@@ -6312,7 +5781,6 @@ Material:
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
   m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!1001 &1074833677
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6480,321 +5948,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 497558326116162908, guid: aa989ef338b1f1d499c583f604d233e5, type: 3}
   m_PrefabInstance: {fileID: 1082109071}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1084475375
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1345365199031410131, guid: c43ac1b5fbd2fc24ea40fb28bae6be3e, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1345365200003371169, guid: c43ac1b5fbd2fc24ea40fb28bae6be3e, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2923976314917426932, guid: c43ac1b5fbd2fc24ea40fb28bae6be3e, type: 3}
-      propertyPath: m_Name
-      value: TechDemoXRRigOpenXR
-      objectReference: {fileID: 0}
-    - target: {fileID: 2923976314917426939, guid: c43ac1b5fbd2fc24ea40fb28bae6be3e, type: 3}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 2923976314917426939, guid: c43ac1b5fbd2fc24ea40fb28bae6be3e, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2923976314917426939, guid: c43ac1b5fbd2fc24ea40fb28bae6be3e, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2923976314917426939, guid: c43ac1b5fbd2fc24ea40fb28bae6be3e, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -13.61
-      objectReference: {fileID: 0}
-    - target: {fileID: 2923976314917426939, guid: c43ac1b5fbd2fc24ea40fb28bae6be3e, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.001
-      objectReference: {fileID: 0}
-    - target: {fileID: 2923976314917426939, guid: c43ac1b5fbd2fc24ea40fb28bae6be3e, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -12.65
-      objectReference: {fileID: 0}
-    - target: {fileID: 2923976314917426939, guid: c43ac1b5fbd2fc24ea40fb28bae6be3e, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.71628314
-      objectReference: {fileID: 0}
-    - target: {fileID: 2923976314917426939, guid: c43ac1b5fbd2fc24ea40fb28bae6be3e, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2923976314917426939, guid: c43ac1b5fbd2fc24ea40fb28bae6be3e, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.6978098
-      objectReference: {fileID: 0}
-    - target: {fileID: 2923976314917426939, guid: c43ac1b5fbd2fc24ea40fb28bae6be3e, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2923976314917426939, guid: c43ac1b5fbd2fc24ea40fb28bae6be3e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2923976314917426939, guid: c43ac1b5fbd2fc24ea40fb28bae6be3e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2923976314917426939, guid: c43ac1b5fbd2fc24ea40fb28bae6be3e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4135232564506912913, guid: c43ac1b5fbd2fc24ea40fb28bae6be3e, type: 3}
-      propertyPath: m_ConnectedAnchor.x
-      value: -0.014909902
-      objectReference: {fileID: 0}
-    - target: {fileID: 4135232564506912913, guid: c43ac1b5fbd2fc24ea40fb28bae6be3e, type: 3}
-      propertyPath: m_ConnectedAnchor.y
-      value: 0.00032983837
-      objectReference: {fileID: 0}
-    - target: {fileID: 4135232564506912913, guid: c43ac1b5fbd2fc24ea40fb28bae6be3e, type: 3}
-      propertyPath: m_ConnectedAnchor.z
-      value: -0.00019016024
-      objectReference: {fileID: 0}
-    - target: {fileID: 5812245618273605981, guid: c43ac1b5fbd2fc24ea40fb28bae6be3e, type: 3}
-      propertyPath: m_ConnectedAnchor.x
-      value: -0.051490273
-      objectReference: {fileID: 0}
-    - target: {fileID: 6007477749196735580, guid: c43ac1b5fbd2fc24ea40fb28bae6be3e, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 6007477750435170606, guid: c43ac1b5fbd2fc24ea40fb28bae6be3e, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2923976313507361695, guid: c43ac1b5fbd2fc24ea40fb28bae6be3e, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1084475382}
-    - targetCorrespondingSourceObject: {fileID: 1345365200003371169, guid: c43ac1b5fbd2fc24ea40fb28bae6be3e, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1808748868}
-    - targetCorrespondingSourceObject: {fileID: 6007477750435170606, guid: c43ac1b5fbd2fc24ea40fb28bae6be3e, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1808748869}
-    - targetCorrespondingSourceObject: {fileID: 703588620095445913, guid: c43ac1b5fbd2fc24ea40fb28bae6be3e, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1084475383}
-    - targetCorrespondingSourceObject: {fileID: 8886962481680141934, guid: c43ac1b5fbd2fc24ea40fb28bae6be3e, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1084475381}
-    - targetCorrespondingSourceObject: {fileID: 6718914276336705915, guid: c43ac1b5fbd2fc24ea40fb28bae6be3e, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1084475380}
-  m_SourcePrefab: {fileID: 100100000, guid: c43ac1b5fbd2fc24ea40fb28bae6be3e, type: 3}
---- !u!1 &1084475376 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6718914276336705915, guid: c43ac1b5fbd2fc24ea40fb28bae6be3e, type: 3}
-  m_PrefabInstance: {fileID: 1084475375}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1084475377 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8886962481680141934, guid: c43ac1b5fbd2fc24ea40fb28bae6be3e, type: 3}
-  m_PrefabInstance: {fileID: 1084475375}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1084475378 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2923976313507361695, guid: c43ac1b5fbd2fc24ea40fb28bae6be3e, type: 3}
-  m_PrefabInstance: {fileID: 1084475375}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1084475379 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 703588620095445913, guid: c43ac1b5fbd2fc24ea40fb28bae6be3e, type: 3}
-  m_PrefabInstance: {fileID: 1084475375}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1084475380
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1084475376}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalCameraData
-  m_RenderShadows: 1
-  m_RequiresDepthTextureOption: 2
-  m_RequiresOpaqueTextureOption: 2
-  m_CameraType: 0
-  m_Cameras: []
-  m_RendererIndex: -1
-  m_VolumeLayerMask:
-    serializedVersion: 2
-    m_Bits: 1
-  m_VolumeTrigger: {fileID: 0}
-  m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
-  m_Antialiasing: 0
-  m_AntialiasingQuality: 2
-  m_StopNaN: 0
-  m_Dithering: 0
-  m_ClearDepth: 1
-  m_AllowXRRendering: 1
-  m_AllowHDROutput: 1
-  m_UseScreenCoordOverride: 0
-  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
-  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
-  m_RequiresDepthTexture: 0
-  m_RequiresColorTexture: 0
-  m_TaaSettings:
-    m_Quality: 3
-    m_FrameInfluence: 0.1
-    m_JitterScale: 1
-    m_MipBias: 0
-    m_VarianceClampScale: 0.9
-    m_ContrastAdaptiveSharpening: 0
-  m_Version: 2
---- !u!114 &1084475381
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1084475377}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalCameraData
-  m_RenderShadows: 1
-  m_RequiresDepthTextureOption: 2
-  m_RequiresOpaqueTextureOption: 2
-  m_CameraType: 0
-  m_Cameras: []
-  m_RendererIndex: -1
-  m_VolumeLayerMask:
-    serializedVersion: 2
-    m_Bits: 1
-  m_VolumeTrigger: {fileID: 0}
-  m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
-  m_Antialiasing: 0
-  m_AntialiasingQuality: 2
-  m_StopNaN: 0
-  m_Dithering: 0
-  m_ClearDepth: 1
-  m_AllowXRRendering: 1
-  m_AllowHDROutput: 1
-  m_UseScreenCoordOverride: 0
-  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
-  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
-  m_RequiresDepthTexture: 0
-  m_RequiresColorTexture: 0
-  m_TaaSettings:
-    m_Quality: 3
-    m_FrameInfluence: 0.1
-    m_JitterScale: 1
-    m_MipBias: 0
-    m_VarianceClampScale: 0.9
-    m_ContrastAdaptiveSharpening: 0
-  m_Version: 2
---- !u!114 &1084475382
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1084475378}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalCameraData
-  m_RenderShadows: 1
-  m_RequiresDepthTextureOption: 2
-  m_RequiresOpaqueTextureOption: 2
-  m_CameraType: 0
-  m_Cameras: []
-  m_RendererIndex: -1
-  m_VolumeLayerMask:
-    serializedVersion: 2
-    m_Bits: 1
-  m_VolumeTrigger: {fileID: 0}
-  m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
-  m_Antialiasing: 0
-  m_AntialiasingQuality: 2
-  m_StopNaN: 0
-  m_Dithering: 0
-  m_ClearDepth: 1
-  m_AllowXRRendering: 1
-  m_AllowHDROutput: 1
-  m_UseScreenCoordOverride: 0
-  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
-  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
-  m_RequiresDepthTexture: 0
-  m_RequiresColorTexture: 0
-  m_TaaSettings:
-    m_Quality: 3
-    m_FrameInfluence: 0.1
-    m_JitterScale: 1
-    m_MipBias: 0
-    m_VarianceClampScale: 0.9
-    m_ContrastAdaptiveSharpening: 0
-  m_Version: 2
---- !u!114 &1084475383
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1084475379}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalCameraData
-  m_RenderShadows: 1
-  m_RequiresDepthTextureOption: 2
-  m_RequiresOpaqueTextureOption: 2
-  m_CameraType: 0
-  m_Cameras: []
-  m_RendererIndex: -1
-  m_VolumeLayerMask:
-    serializedVersion: 2
-    m_Bits: 1
-  m_VolumeTrigger: {fileID: 0}
-  m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
-  m_Antialiasing: 0
-  m_AntialiasingQuality: 2
-  m_StopNaN: 0
-  m_Dithering: 0
-  m_ClearDepth: 1
-  m_AllowXRRendering: 1
-  m_AllowHDROutput: 1
-  m_UseScreenCoordOverride: 0
-  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
-  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
-  m_RequiresDepthTexture: 0
-  m_RequiresColorTexture: 0
-  m_TaaSettings:
-    m_Quality: 3
-    m_FrameInfluence: 0.1
-    m_JitterScale: 1
-    m_MipBias: 0
-    m_VarianceClampScale: 0.9
-    m_ContrastAdaptiveSharpening: 0
-  m_Version: 2
 --- !u!1 &1095940355
 GameObject:
   m_ObjectHideFlags: 0
@@ -6821,14 +5974,15 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1095940355}
   m_Enabled: 1
-  serializedVersion: 13
+  serializedVersion: 10
   m_Type: 1
+  m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
-  m_CookieSize2D: {x: 10, y: 10}
+  m_CookieSize: 10
   m_Shadows:
     m_Type: 0
     m_Resolution: -1
@@ -6872,12 +6026,8 @@ Light:
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
-  m_ForceVisible: 0
-  m_ShapeRadius: 0
+  m_ShadowRadius: 0
   m_ShadowAngle: 0
-  m_LightUnit: 1
-  m_LuxAtDistance: 1
-  m_EnableSpotReflector: 1
 --- !u!4 &1095940357
 Transform:
   m_ObjectHideFlags: 0
@@ -6904,24 +6054,18 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalLightData
+  m_EditorClassIdentifier: 
+  m_Version: 3
   m_UsePipelineSettings: 1
   m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
   m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
-  m_RenderingLayersMask:
-    serializedVersion: 0
-    m_Bits: 1
-  m_ShadowRenderingLayersMask:
-    serializedVersion: 0
-    m_Bits: 1
-  m_Version: 4
-  m_LightLayerMask: 1
-  m_ShadowLayerMask: 1
-  m_RenderingLayers: 1
-  m_ShadowRenderingLayers: 1
 --- !u!1001 &1121620461
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7149,7 +6293,6 @@ Material:
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
   m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!21 &1161571878
 Material:
   serializedVersion: 8
@@ -7179,7 +6322,6 @@ Material:
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
   m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!21 &1180251186
 Material:
   serializedVersion: 8
@@ -7209,7 +6351,6 @@ Material:
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
   m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!1001 &1185140037
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7577,47 +6718,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4871393619771843202, guid: 66d7fa8e3c407a24cb9a0001eb16e240, type: 3}
   m_PrefabInstance: {fileID: 1225370622}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1230391520
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2912174324032118355}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 80c3459a626238148a4143ca5cd9706f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Oculus.VR::OVROverlayCanvas_TMPChanged
-  TargetCanvas: {fileID: 1230391521}
---- !u!114 &1230391521
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2912174324032118355}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee10491ef6d5d1d49a270cf6b09bdc19, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Oculus.VR::OVROverlayCanvas
-  _mipmapMode: 1
-  _dynamicResolution: 0
-  _redrawResolutionThreshold: 2147483647
-  rectTransform: {fileID: 2912174324032118354}
-  maxTextureSize: 2048
-  manualRedraw: 1
-  renderInterval: 1
-  renderIntervalFrameOffset: 0
-  superSample: 0
-  layer: 5
-  opacity: 1
-  shape: 0
-  curveRadius: 1
-  overlapMask: 0
-  compositionMode: 2
-  _overlayEnabled: 1
 --- !u!1001 &1247646799
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7713,7 +6813,6 @@ Material:
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
   m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!1001 &1279751359
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8070,7 +7169,6 @@ Material:
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
   m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!1001 &1310287787
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8379,7 +7477,6 @@ Material:
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
   m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!21 &1359136800
 Material:
   serializedVersion: 8
@@ -8409,7 +7506,6 @@ Material:
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
   m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!1001 &1361002590
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8505,7 +7601,6 @@ Material:
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
   m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!21 &1412087467
 Material:
   serializedVersion: 8
@@ -8535,7 +7630,6 @@ Material:
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
   m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!21 &1467830153
 Material:
   serializedVersion: 8
@@ -8565,7 +7659,6 @@ Material:
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
   m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!1001 &1470432541
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8987,7 +8080,6 @@ Material:
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
   m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!21 &1531105120
 Material:
   serializedVersion: 8
@@ -9017,7 +8109,6 @@ Material:
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
   m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!21 &1552249924
 Material:
   serializedVersion: 8
@@ -9047,7 +8138,6 @@ Material:
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
   m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!21 &1558252179
 Material:
   serializedVersion: 8
@@ -9077,7 +8167,6 @@ Material:
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
   m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!21 &1558765695
 Material:
   serializedVersion: 8
@@ -9107,7 +8196,6 @@ Material:
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
   m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!1001 &1564914812
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9268,47 +8356,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6770214079390364125, guid: 9b4f1d9b3ce814143bb6f1a9ff1fd077, type: 3}
   m_PrefabInstance: {fileID: 1596947543}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1597051758
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2912174324032118343}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 80c3459a626238148a4143ca5cd9706f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Oculus.VR::OVROverlayCanvas_TMPChanged
-  TargetCanvas: {fileID: 1597051759}
---- !u!114 &1597051759
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2912174324032118343}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee10491ef6d5d1d49a270cf6b09bdc19, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Oculus.VR::OVROverlayCanvas
-  _mipmapMode: 1
-  _dynamicResolution: 0
-  _redrawResolutionThreshold: 2147483647
-  rectTransform: {fileID: 2912174324032118342}
-  maxTextureSize: 2048
-  manualRedraw: 1
-  renderInterval: 1
-  renderIntervalFrameOffset: 0
-  superSample: 0
-  layer: 5
-  opacity: 1
-  shape: 0
-  curveRadius: 1
-  overlapMask: 0
-  compositionMode: 2
-  _overlayEnabled: 1
 --- !u!21 &1601059259
 Material:
   serializedVersion: 8
@@ -9338,7 +8385,6 @@ Material:
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
   m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!1001 &1620792187
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9472,7 +8518,6 @@ Material:
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
   m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!1001 &1701214261
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9634,7 +8679,6 @@ Material:
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
   m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!1001 &1763695295
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9767,6 +8811,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4871393619771843202, guid: 66d7fa8e3c407a24cb9a0001eb16e240, type: 3}
   m_PrefabInstance: {fileID: 1766203345}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1776917040
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 320b56fea607b96489ba371e7c55342a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -10.436858
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 320b56fea607b96489ba371e7c55342a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.0405049
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 320b56fea607b96489ba371e7c55342a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.71878177
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 320b56fea607b96489ba371e7c55342a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 320b56fea607b96489ba371e7c55342a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.00000008146034
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 320b56fea607b96489ba371e7c55342a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 320b56fea607b96489ba371e7c55342a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 320b56fea607b96489ba371e7c55342a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 320b56fea607b96489ba371e7c55342a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 320b56fea607b96489ba371e7c55342a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 320b56fea607b96489ba371e7c55342a, type: 3}
+      propertyPath: m_Name
+      value: torch
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 320b56fea607b96489ba371e7c55342a, type: 3}
 --- !u!21 &1778106736
 Material:
   serializedVersion: 8
@@ -9796,7 +8897,6 @@ Material:
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
   m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!21 &1782077237
 Material:
   serializedVersion: 8
@@ -9826,7 +8926,6 @@ Material:
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
   m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!1001 &1791188031
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9938,7 +9037,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8191738930844208606, guid: b1d5d3ef80859e448bbf1e53111472e6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.835
+      value: 1.013
       objectReference: {fileID: 0}
     - target: {fileID: 8191738930844208606, guid: b1d5d3ef80859e448bbf1e53111472e6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -10038,82 +9137,6 @@ Transform:
   - {fileID: 885952990}
   m_Father: {fileID: 2103155834}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1808748864 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1345365200003371169, guid: c43ac1b5fbd2fc24ea40fb28bae6be3e, type: 3}
-  m_PrefabInstance: {fileID: 1084475375}
-  m_PrefabAsset: {fileID: 0}
---- !u!224 &1808748865 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 1345365200003371170, guid: c43ac1b5fbd2fc24ea40fb28bae6be3e, type: 3}
-  m_PrefabInstance: {fileID: 1084475375}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1808748866 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6007477750435170606, guid: c43ac1b5fbd2fc24ea40fb28bae6be3e, type: 3}
-  m_PrefabInstance: {fileID: 1084475375}
-  m_PrefabAsset: {fileID: 0}
---- !u!224 &1808748867 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 6007477750435170605, guid: c43ac1b5fbd2fc24ea40fb28bae6be3e, type: 3}
-  m_PrefabInstance: {fileID: 1084475375}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1808748868
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1808748864}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee10491ef6d5d1d49a270cf6b09bdc19, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Oculus.VR::OVROverlayCanvas
-  _mipmapMode: 0
-  _dynamicResolution: 1
-  _redrawResolutionThreshold: 2147483647
-  rectTransform: {fileID: 1808748865}
-  maxTextureSize: 2048
-  manualRedraw: 0
-  renderInterval: 1
-  renderIntervalFrameOffset: 0
-  superSample: 0
-  layer: 5
-  opacity: 2
-  shape: 0
-  curveRadius: 1
-  overlapMask: 0
-  compositionMode: 1
-  _overlayEnabled: 1
---- !u!114 &1808748869
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1808748866}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee10491ef6d5d1d49a270cf6b09bdc19, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Oculus.VR::OVROverlayCanvas
-  _mipmapMode: 0
-  _dynamicResolution: 1
-  _redrawResolutionThreshold: 2147483647
-  rectTransform: {fileID: 1808748867}
-  maxTextureSize: 2048
-  manualRedraw: 0
-  renderInterval: 1
-  renderIntervalFrameOffset: 0
-  superSample: 0
-  layer: 5
-  opacity: 2
-  shape: 0
-  curveRadius: 1
-  overlapMask: 0
-  compositionMode: 1
-  _overlayEnabled: 1
 --- !u!1001 &1826556644
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10312,50 +9335,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7477956705429852750, guid: add805f03ddc3f7498b179e94e22c78a, type: 3}
   m_PrefabInstance: {fileID: 1859682042}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1862627868
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 22373470}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalCameraData
-  m_RenderShadows: 1
-  m_RequiresDepthTextureOption: 2
-  m_RequiresOpaqueTextureOption: 2
-  m_CameraType: 0
-  m_Cameras: []
-  m_RendererIndex: -1
-  m_VolumeLayerMask:
-    serializedVersion: 2
-    m_Bits: 1
-  m_VolumeTrigger: {fileID: 0}
-  m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
-  m_Antialiasing: 0
-  m_AntialiasingQuality: 2
-  m_StopNaN: 0
-  m_Dithering: 0
-  m_ClearDepth: 1
-  m_AllowXRRendering: 1
-  m_AllowHDROutput: 1
-  m_UseScreenCoordOverride: 0
-  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
-  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
-  m_RequiresDepthTexture: 0
-  m_RequiresColorTexture: 0
-  m_TaaSettings:
-    m_Quality: 3
-    m_FrameInfluence: 0.1
-    m_JitterScale: 1
-    m_MipBias: 0
-    m_VarianceClampScale: 0.9
-    m_ContrastAdaptiveSharpening: 0
-  m_Version: 2
 --- !u!21 &1877887128
 Material:
   serializedVersion: 8
@@ -10385,7 +9364,6 @@ Material:
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
   m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!21 &1879194998
 Material:
   serializedVersion: 8
@@ -10415,7 +9393,6 @@ Material:
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
   m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!21 &1884865601
 Material:
   serializedVersion: 8
@@ -10445,48 +9422,6 @@ Material:
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
   m_BuildTextureStacks: []
-  m_AllowLocking: 1
---- !u!114 &1886729858
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2912174324032118359}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 80c3459a626238148a4143ca5cd9706f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Oculus.VR::OVROverlayCanvas_TMPChanged
-  TargetCanvas: {fileID: 1886729859}
---- !u!114 &1886729859
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2912174324032118359}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee10491ef6d5d1d49a270cf6b09bdc19, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Oculus.VR::OVROverlayCanvas
-  _mipmapMode: 1
-  _dynamicResolution: 0
-  _redrawResolutionThreshold: 2147483647
-  rectTransform: {fileID: 2912174324032118358}
-  maxTextureSize: 2048
-  manualRedraw: 1
-  renderInterval: 1
-  renderIntervalFrameOffset: 0
-  superSample: 0
-  layer: 5
-  opacity: 1
-  shape: 0
-  curveRadius: 1
-  overlapMask: 0
-  compositionMode: 2
-  _overlayEnabled: 1
 --- !u!1001 &1898494485
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10693,18 +9628,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1807336347}
     m_Modifications:
-    - target: {fileID: 1298148262, guid: 79f4ee5b807f5584f935ab05950c1348, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1298148264, guid: 79f4ee5b807f5584f935ab05950c1348, type: 3}
-      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
-      value: 1801810542
-      objectReference: {fileID: 0}
-    - target: {fileID: 1524989808, guid: 79f4ee5b807f5584f935ab05950c1348, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 817918038001439893, guid: 79f4ee5b807f5584f935ab05950c1348, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -10728,10 +9651,6 @@ PrefabInstance:
     - target: {fileID: 3261521793246835294, guid: 79f4ee5b807f5584f935ab05950c1348, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3428934165710421870, guid: 79f4ee5b807f5584f935ab05950c1348, type: 3}
-      propertyPath: m_Layer
-      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6851120882295729607, guid: 79f4ee5b807f5584f935ab05950c1348, type: 3}
       propertyPath: m_ConnectedAnchor.x
@@ -10752,23 +9671,6 @@ PrefabInstance:
     - target: {fileID: 7707562975978604748, guid: 79f4ee5b807f5584f935ab05950c1348, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7843380087134698915, guid: 79f4ee5b807f5584f935ab05950c1348, type: 3}
-      propertyPath: m_text
-      value: "\u041A\u043E\u0434: 1,1,1\n\u0420\u0430\u0441\u0441\u0442\u043E\u044F\u043D\u0438\u0435:
-        2000 \u0444\u0443\u0442\u043E\u0432\n\u0421\u043E\u0441\u0442\u043E\u044F\u043D\u0438\u0435:
-        \u043A\u0430\u043C\u0435\u0440\u0430 1\n\u0414\u043E\u043F\u0443\u0441\u0442\u0438\u043C\u043E\u0435
-        \u043E\u0442\u043A\u043B\u043E\u043D\u0435\u043D\u0438\u0435: 50\n\u041D\u0438\u0436\u043D\u044F\u044F
-        \u0433\u0440\u0430\u043D\u0438\u0446\u0430: 0\n\u0412\u0435\u0440\u0445\u043D\u044F\u044F
-        \u0433\u0440\u0430\u043D\u0438\u0446\u0430: 0"
-      objectReference: {fileID: 0}
-    - target: {fileID: 7843380087134698915, guid: 79f4ee5b807f5584f935ab05950c1348, type: 3}
-      propertyPath: m_margin.z
-      value: -0.24228103
-      objectReference: {fileID: 0}
-    - target: {fileID: 7843380087134698915, guid: 79f4ee5b807f5584f935ab05950c1348, type: 3}
-      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
-      value: 1801810542
       objectReference: {fileID: 0}
     - target: {fileID: 8253280069094960987, guid: 79f4ee5b807f5584f935ab05950c1348, type: 3}
       propertyPath: m_IsActive
@@ -10863,186 +9765,15 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1298148262, guid: 79f4ee5b807f5584f935ab05950c1348, type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 1298148262, guid: 79f4ee5b807f5584f935ab05950c1348, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1983405104}
-    - targetCorrespondingSourceObject: {fileID: 1298148262, guid: 79f4ee5b807f5584f935ab05950c1348, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1983405103}
-    - targetCorrespondingSourceObject: {fileID: 1524989808, guid: 79f4ee5b807f5584f935ab05950c1348, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1983405102}
-    - targetCorrespondingSourceObject: {fileID: 1524989808, guid: 79f4ee5b807f5584f935ab05950c1348, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1983405101}
     - targetCorrespondingSourceObject: {fileID: 3428934165710421870, guid: 79f4ee5b807f5584f935ab05950c1348, type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 3428934165710421870, guid: 79f4ee5b807f5584f935ab05950c1348, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1983405100}
-    - targetCorrespondingSourceObject: {fileID: 3428934165710421870, guid: 79f4ee5b807f5584f935ab05950c1348, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1983405099}
   m_SourcePrefab: {fileID: 100100000, guid: 79f4ee5b807f5584f935ab05950c1348, type: 3}
 --- !u!4 &1983405092 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8681712286792026023, guid: 79f4ee5b807f5584f935ab05950c1348, type: 3}
   m_PrefabInstance: {fileID: 1983405091}
   m_PrefabAsset: {fileID: 0}
---- !u!224 &1983405093 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 1262837800668866902, guid: 79f4ee5b807f5584f935ab05950c1348, type: 3}
-  m_PrefabInstance: {fileID: 1983405091}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1983405094 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3428934165710421870, guid: 79f4ee5b807f5584f935ab05950c1348, type: 3}
-  m_PrefabInstance: {fileID: 1983405091}
-  m_PrefabAsset: {fileID: 0}
---- !u!224 &1983405095 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 1524989809, guid: 79f4ee5b807f5584f935ab05950c1348, type: 3}
-  m_PrefabInstance: {fileID: 1983405091}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1983405096 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1524989808, guid: 79f4ee5b807f5584f935ab05950c1348, type: 3}
-  m_PrefabInstance: {fileID: 1983405091}
-  m_PrefabAsset: {fileID: 0}
---- !u!224 &1983405097 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 1298148263, guid: 79f4ee5b807f5584f935ab05950c1348, type: 3}
-  m_PrefabInstance: {fileID: 1983405091}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1983405098 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1298148262, guid: 79f4ee5b807f5584f935ab05950c1348, type: 3}
-  m_PrefabInstance: {fileID: 1983405091}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1983405099
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1983405094}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 80c3459a626238148a4143ca5cd9706f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Oculus.VR::OVROverlayCanvas_TMPChanged
-  TargetCanvas: {fileID: 1983405100}
---- !u!114 &1983405100
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1983405094}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee10491ef6d5d1d49a270cf6b09bdc19, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Oculus.VR::OVROverlayCanvas
-  _mipmapMode: 1
-  _dynamicResolution: 0
-  _redrawResolutionThreshold: 2147483647
-  rectTransform: {fileID: 1983405093}
-  maxTextureSize: 2048
-  manualRedraw: 1
-  renderInterval: 1
-  renderIntervalFrameOffset: 0
-  superSample: 0
-  layer: 5
-  opacity: 1
-  shape: 0
-  curveRadius: 1
-  overlapMask: 0
-  compositionMode: 2
-  _overlayEnabled: 1
---- !u!114 &1983405101
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1983405096}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 80c3459a626238148a4143ca5cd9706f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Oculus.VR::OVROverlayCanvas_TMPChanged
-  TargetCanvas: {fileID: 1983405102}
---- !u!114 &1983405102
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1983405096}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee10491ef6d5d1d49a270cf6b09bdc19, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Oculus.VR::OVROverlayCanvas
-  _mipmapMode: 1
-  _dynamicResolution: 0
-  _redrawResolutionThreshold: 2147483647
-  rectTransform: {fileID: 1983405095}
-  maxTextureSize: 2048
-  manualRedraw: 1
-  renderInterval: 1
-  renderIntervalFrameOffset: 0
-  superSample: 0
-  layer: 5
-  opacity: 1
-  shape: 0
-  curveRadius: 1
-  overlapMask: 0
-  compositionMode: 2
-  _overlayEnabled: 1
---- !u!114 &1983405103
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1983405098}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 80c3459a626238148a4143ca5cd9706f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Oculus.VR::OVROverlayCanvas_TMPChanged
-  TargetCanvas: {fileID: 1983405104}
---- !u!114 &1983405104
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1983405098}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee10491ef6d5d1d49a270cf6b09bdc19, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Oculus.VR::OVROverlayCanvas
-  _mipmapMode: 1
-  _dynamicResolution: 0
-  _redrawResolutionThreshold: 2147483647
-  rectTransform: {fileID: 1983405097}
-  maxTextureSize: 2048
-  manualRedraw: 1
-  renderInterval: 1
-  renderIntervalFrameOffset: 0
-  superSample: 0
-  layer: 5
-  opacity: 1
-  shape: 0
-  curveRadius: 1
-  overlapMask: 0
-  compositionMode: 2
-  _overlayEnabled: 1
 --- !u!1001 &2009402806
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11326,47 +10057,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4871393619771843202, guid: 66d7fa8e3c407a24cb9a0001eb16e240, type: 3}
   m_PrefabInstance: {fileID: 2017442373}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2024818540
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2912174324032118351}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 80c3459a626238148a4143ca5cd9706f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Oculus.VR::OVROverlayCanvas_TMPChanged
-  TargetCanvas: {fileID: 2024818541}
---- !u!114 &2024818541
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2912174324032118351}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee10491ef6d5d1d49a270cf6b09bdc19, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Oculus.VR::OVROverlayCanvas
-  _mipmapMode: 1
-  _dynamicResolution: 0
-  _redrawResolutionThreshold: 2147483647
-  rectTransform: {fileID: 2912174324032118350}
-  maxTextureSize: 2048
-  manualRedraw: 1
-  renderInterval: 1
-  renderIntervalFrameOffset: 0
-  superSample: 0
-  layer: 5
-  opacity: 1
-  shape: 0
-  curveRadius: 1
-  overlapMask: 0
-  compositionMode: 2
-  _overlayEnabled: 1
 --- !u!21 &2035896159
 Material:
   serializedVersion: 8
@@ -11396,48 +10086,6 @@ Material:
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
   m_BuildTextureStacks: []
-  m_AllowLocking: 1
---- !u!114 &2043315761
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2912174324032118353}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 80c3459a626238148a4143ca5cd9706f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Oculus.VR::OVROverlayCanvas_TMPChanged
-  TargetCanvas: {fileID: 2043315762}
---- !u!114 &2043315762
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2912174324032118353}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee10491ef6d5d1d49a270cf6b09bdc19, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Oculus.VR::OVROverlayCanvas
-  _mipmapMode: 1
-  _dynamicResolution: 0
-  _redrawResolutionThreshold: 2147483647
-  rectTransform: {fileID: 2912174324032118352}
-  maxTextureSize: 2048
-  manualRedraw: 1
-  renderInterval: 1
-  renderIntervalFrameOffset: 0
-  superSample: 0
-  layer: 5
-  opacity: 1
-  shape: 0
-  curveRadius: 1
-  overlapMask: 0
-  compositionMode: 2
-  _overlayEnabled: 1
 --- !u!1001 &2049752426
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11796,7 +10444,6 @@ Material:
     m_Colors:
     - _Color: {r: 0, g: 1, b: 0, a: 1}
   m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!1001 &315437160094531433
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12110,42 +10757,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 394944563}
     m_Modifications:
-    - target: {fileID: 504471755202648623, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
-      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
-      value: 1801810542
-      objectReference: {fileID: 0}
-    - target: {fileID: 507162503082996196, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
-      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
-      value: 1801810542
-      objectReference: {fileID: 0}
-    - target: {fileID: 1753984328469507418, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
-      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
-      value: 1801810542
-      objectReference: {fileID: 0}
-    - target: {fileID: 2258276811509913446, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
-      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
-      value: 1801810542
-      objectReference: {fileID: 0}
-    - target: {fileID: 2887651488261378052, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
-      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
-      value: 1801810542
-      objectReference: {fileID: 0}
-    - target: {fileID: 2915610619924662432, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2922140825996974174, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
-      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
-      value: 1801810542
-      objectReference: {fileID: 0}
-    - target: {fileID: 3535039945469105592, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3720742055210971481, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 3863304589366004990, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -12190,77 +10801,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3892508381733537170, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
-      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
-      value: 1801810542
-      objectReference: {fileID: 0}
-    - target: {fileID: 3898291686173746217, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
-      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
-      value: 1801810542
-      objectReference: {fileID: 0}
-    - target: {fileID: 3942495865933057686, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4324081194625206155, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 4528061161408321092, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
       propertyPath: m_Name
       value: sliding_door_setup
-      objectReference: {fileID: 0}
-    - target: {fileID: 4590756695818173768, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4833422877203888019, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4905442266055822767, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 6576654959887350490, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 6578926897518858513, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7232538380643239850, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.0004
-      objectReference: {fileID: 0}
-    - target: {fileID: 7232538380643239850, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7664358103513138396, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7706302924310572643, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
-      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
-      value: 1801810542
-      objectReference: {fileID: 0}
-    - target: {fileID: 8063270289871720876, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
-      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
-      value: 1801810542
-      objectReference: {fileID: 0}
-    - target: {fileID: 8372916136622188629, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
-      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
-      value: 1801810542
-      objectReference: {fileID: 0}
-    - target: {fileID: 8382950491751297265, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8415329041376114859, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
-      propertyPath: m_Layer
-      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12269,368 +10812,37 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6578926897518858513, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 6578926897518858513, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2912174324032118371}
-    - targetCorrespondingSourceObject: {fileID: 6578926897518858513, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2912174324032118370}
     - targetCorrespondingSourceObject: {fileID: 3942495865933057686, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 3942495865933057686, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2912174324032118369}
-    - targetCorrespondingSourceObject: {fileID: 3942495865933057686, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2912174324032118368}
-    - targetCorrespondingSourceObject: {fileID: 7664358103513138396, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}
     - targetCorrespondingSourceObject: {fileID: 7664358103513138396, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2912174324032118367}
-    - targetCorrespondingSourceObject: {fileID: 7664358103513138396, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2912174324032118366}
-    - targetCorrespondingSourceObject: {fileID: 2915610619924662432, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 0}
     - targetCorrespondingSourceObject: {fileID: 2915610619924662432, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1886729859}
-    - targetCorrespondingSourceObject: {fileID: 2915610619924662432, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1886729858}
-    - targetCorrespondingSourceObject: {fileID: 3720742055210971481, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}
     - targetCorrespondingSourceObject: {fileID: 3720742055210971481, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 168074122}
-    - targetCorrespondingSourceObject: {fileID: 3720742055210971481, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 168074121}
-    - targetCorrespondingSourceObject: {fileID: 4905442266055822767, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 0}
     - targetCorrespondingSourceObject: {fileID: 4905442266055822767, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1230391521}
-    - targetCorrespondingSourceObject: {fileID: 4905442266055822767, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1230391520}
-    - targetCorrespondingSourceObject: {fileID: 6576654959887350490, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}
     - targetCorrespondingSourceObject: {fileID: 6576654959887350490, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2043315762}
-    - targetCorrespondingSourceObject: {fileID: 6576654959887350490, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2043315761}
-    - targetCorrespondingSourceObject: {fileID: 8415329041376114859, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 0}
     - targetCorrespondingSourceObject: {fileID: 8415329041376114859, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2024818541}
-    - targetCorrespondingSourceObject: {fileID: 8415329041376114859, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2024818540}
-    - targetCorrespondingSourceObject: {fileID: 8382950491751297265, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}
     - targetCorrespondingSourceObject: {fileID: 8382950491751297265, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 793611145}
-    - targetCorrespondingSourceObject: {fileID: 8382950491751297265, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 793611144}
-    - targetCorrespondingSourceObject: {fileID: 4833422877203888019, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 0}
     - targetCorrespondingSourceObject: {fileID: 4833422877203888019, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 847267206}
-    - targetCorrespondingSourceObject: {fileID: 4833422877203888019, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 847267205}
-    - targetCorrespondingSourceObject: {fileID: 3535039945469105592, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 592725503}
-    - targetCorrespondingSourceObject: {fileID: 3535039945469105592, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 592725502}
-    - targetCorrespondingSourceObject: {fileID: 4324081194625206155, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1597051759}
-    - targetCorrespondingSourceObject: {fileID: 4324081194625206155, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1597051758}
-    - targetCorrespondingSourceObject: {fileID: 4590756695818173768, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}
     - targetCorrespondingSourceObject: {fileID: 4590756695818173768, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 206712902}
-    - targetCorrespondingSourceObject: {fileID: 4590756695818173768, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 206712901}
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
---- !u!224 &2912174324032118340 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 7232538380643239850, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
-  m_PrefabInstance: {fileID: 2912174324032118339}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &2912174324032118341 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4590756695818173768, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
-  m_PrefabInstance: {fileID: 2912174324032118339}
-  m_PrefabAsset: {fileID: 0}
---- !u!224 &2912174324032118342 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 3074600490015257922, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
-  m_PrefabInstance: {fileID: 2912174324032118339}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &2912174324032118343 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4324081194625206155, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
-  m_PrefabInstance: {fileID: 2912174324032118339}
-  m_PrefabAsset: {fileID: 0}
---- !u!224 &2912174324032118344 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 2857507768704460657, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
-  m_PrefabInstance: {fileID: 2912174324032118339}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &2912174324032118345 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3535039945469105592, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
-  m_PrefabInstance: {fileID: 2912174324032118339}
-  m_PrefabAsset: {fileID: 0}
---- !u!224 &2912174324032118346 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 6177478860992873818, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
-  m_PrefabInstance: {fileID: 2912174324032118339}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &2912174324032118347 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4833422877203888019, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
-  m_PrefabInstance: {fileID: 2912174324032118339}
-  m_PrefabAsset: {fileID: 0}
---- !u!224 &2912174324032118348 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 7133470063629779512, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
-  m_PrefabInstance: {fileID: 2912174324032118339}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &2912174324032118349 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8382950491751297265, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
-  m_PrefabInstance: {fileID: 2912174324032118339}
-  m_PrefabAsset: {fileID: 0}
---- !u!224 &2912174324032118350 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 7088759381814970978, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
-  m_PrefabInstance: {fileID: 2912174324032118339}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &2912174324032118351 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8415329041376114859, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
-  m_PrefabInstance: {fileID: 2912174324032118339}
-  m_PrefabAsset: {fileID: 0}
---- !u!224 &2912174324032118352 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 5615404773162977299, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
-  m_PrefabInstance: {fileID: 2912174324032118339}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &2912174324032118353 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6576654959887350490, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
-  m_PrefabInstance: {fileID: 2912174324032118339}
-  m_PrefabAsset: {fileID: 0}
---- !u!224 &2912174324032118354 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 5961277120221888358, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
-  m_PrefabInstance: {fileID: 2912174324032118339}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &2912174324032118355 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4905442266055822767, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
-  m_PrefabInstance: {fileID: 2912174324032118339}
-  m_PrefabAsset: {fileID: 0}
---- !u!224 &2912174324032118356 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 2669419735815816080, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
-  m_PrefabInstance: {fileID: 2912174324032118339}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &2912174324032118357 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3720742055210971481, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
-  m_PrefabInstance: {fileID: 2912174324032118339}
-  m_PrefabAsset: {fileID: 0}
---- !u!224 &2912174324032118358 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 4530410520884001385, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
-  m_PrefabInstance: {fileID: 2912174324032118339}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &2912174324032118359 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2915610619924662432, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
-  m_PrefabInstance: {fileID: 2912174324032118339}
-  m_PrefabAsset: {fileID: 0}
---- !u!224 &2912174324032118360 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 9003910764700202517, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
-  m_PrefabInstance: {fileID: 2912174324032118339}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &2912174324032118361 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7664358103513138396, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
-  m_PrefabInstance: {fileID: 2912174324032118339}
-  m_PrefabAsset: {fileID: 0}
---- !u!224 &2912174324032118362 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 2314739358607752287, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
-  m_PrefabInstance: {fileID: 2912174324032118339}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &2912174324032118363 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3942495865933057686, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
-  m_PrefabInstance: {fileID: 2912174324032118339}
-  m_PrefabAsset: {fileID: 0}
---- !u!224 &2912174324032118364 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 5612645244116083672, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
-  m_PrefabInstance: {fileID: 2912174324032118339}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &2912174324032118365 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6578926897518858513, guid: 00105550540b4434e9c0e79e69faf23c, type: 3}
-  m_PrefabInstance: {fileID: 2912174324032118339}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2912174324032118366
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2912174324032118361}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 80c3459a626238148a4143ca5cd9706f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Oculus.VR::OVROverlayCanvas_TMPChanged
-  TargetCanvas: {fileID: 2912174324032118367}
---- !u!114 &2912174324032118367
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2912174324032118361}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee10491ef6d5d1d49a270cf6b09bdc19, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Oculus.VR::OVROverlayCanvas
-  _mipmapMode: 1
-  _dynamicResolution: 0
-  _redrawResolutionThreshold: 2147483647
-  rectTransform: {fileID: 2912174324032118360}
-  maxTextureSize: 2048
-  manualRedraw: 1
-  renderInterval: 1
-  renderIntervalFrameOffset: 0
-  superSample: 0
-  layer: 5
-  opacity: 1
-  shape: 0
-  curveRadius: 1
-  overlapMask: 0
-  compositionMode: 2
-  _overlayEnabled: 1
---- !u!114 &2912174324032118368
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2912174324032118363}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 80c3459a626238148a4143ca5cd9706f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Oculus.VR::OVROverlayCanvas_TMPChanged
-  TargetCanvas: {fileID: 2912174324032118369}
---- !u!114 &2912174324032118369
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2912174324032118363}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee10491ef6d5d1d49a270cf6b09bdc19, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Oculus.VR::OVROverlayCanvas
-  _mipmapMode: 1
-  _dynamicResolution: 0
-  _redrawResolutionThreshold: 2147483647
-  rectTransform: {fileID: 2912174324032118362}
-  maxTextureSize: 2048
-  manualRedraw: 1
-  renderInterval: 1
-  renderIntervalFrameOffset: 0
-  superSample: 0
-  layer: 5
-  opacity: 1
-  shape: 0
-  curveRadius: 1
-  overlapMask: 0
-  compositionMode: 2
-  _overlayEnabled: 1
---- !u!114 &2912174324032118370
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2912174324032118365}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 80c3459a626238148a4143ca5cd9706f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Oculus.VR::OVROverlayCanvas_TMPChanged
-  TargetCanvas: {fileID: 2912174324032118371}
---- !u!114 &2912174324032118371
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2912174324032118365}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee10491ef6d5d1d49a270cf6b09bdc19, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Oculus.VR::OVROverlayCanvas
-  _mipmapMode: 1
-  _dynamicResolution: 0
-  _redrawResolutionThreshold: 2147483647
-  rectTransform: {fileID: 2912174324032118364}
-  maxTextureSize: 2048
-  manualRedraw: 1
-  renderInterval: 1
-  renderIntervalFrameOffset: 0
-  superSample: 0
-  layer: 5
-  opacity: 1
-  shape: 0
-  curveRadius: 1
-  overlapMask: 0
-  compositionMode: 2
-  _overlayEnabled: 1
 --- !u!1001 &3497485228596465097
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12639,87 +10851,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 604910646645062122, guid: c884123088440284692e484efd2c360f, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1204002509548096657, guid: c884123088440284692e484efd2c360f, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2403935837584695978, guid: c884123088440284692e484efd2c360f, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2877709639154543785, guid: c884123088440284692e484efd2c360f, type: 3}
-      propertyPath: m_text
-      value: "\u0420\u0435\u0436\u0438\u043C \u0437\u0430\u0445\u0432\u0430\u0442\u0430
-        \u043B\u0435\u0432\u043E\u0439  \u0440\u0443\u043A\u043E\u0439"
-      objectReference: {fileID: 0}
-    - target: {fileID: 2877709639154543785, guid: c884123088440284692e484efd2c360f, type: 3}
-      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
-      value: 1801810542
-      objectReference: {fileID: 0}
-    - target: {fileID: 2994800177089679256, guid: c884123088440284692e484efd2c360f, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3497485226741830554, guid: c884123088440284692e484efd2c360f, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3497485226741830556, guid: c884123088440284692e484efd2c360f, type: 3}
-      propertyPath: m_text
-      value: "\u041F\u043B\u0430\u0432\u043D\u044B\u0439 \u043F\u043E\u0432\u043E\u0440\u043E\u0442"
-      objectReference: {fileID: 0}
-    - target: {fileID: 3497485226741830556, guid: c884123088440284692e484efd2c360f, type: 3}
-      propertyPath: m_fontSize
-      value: 22
-      objectReference: {fileID: 0}
-    - target: {fileID: 3497485226741830556, guid: c884123088440284692e484efd2c360f, type: 3}
-      propertyPath: m_margin.z
-      value: -47.014412
-      objectReference: {fileID: 0}
-    - target: {fileID: 3497485226741830556, guid: c884123088440284692e484efd2c360f, type: 3}
-      propertyPath: m_fontSizeBase
-      value: 22
-      objectReference: {fileID: 0}
-    - target: {fileID: 3497485226741830556, guid: c884123088440284692e484efd2c360f, type: 3}
-      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
-      value: 1801810542
-      objectReference: {fileID: 0}
-    - target: {fileID: 3497485226745961024, guid: c884123088440284692e484efd2c360f, type: 3}
-      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
-      value: 1801810542
-      objectReference: {fileID: 0}
-    - target: {fileID: 3497485226745961038, guid: c884123088440284692e484efd2c360f, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3497485226801262664, guid: c884123088440284692e484efd2c360f, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3497485226821168772, guid: c884123088440284692e484efd2c360f, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3497485226821168774, guid: c884123088440284692e484efd2c360f, type: 3}
-      propertyPath: m_text
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3497485226821168774, guid: c884123088440284692e484efd2c360f, type: 3}
-      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
-      value: 1801810542
-      objectReference: {fileID: 0}
-    - target: {fileID: 3497485226908610329, guid: c884123088440284692e484efd2c360f, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3497485227092484988, guid: c884123088440284692e484efd2c360f, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 3497485227092484991, guid: c884123088440284692e484efd2c360f, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -12732,18 +10863,6 @@ PrefabInstance:
       propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3497485227118772210, guid: c884123088440284692e484efd2c360f, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3497485227216201348, guid: c884123088440284692e484efd2c360f, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3497485227309270858, guid: c884123088440284692e484efd2c360f, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 3497485227374402222, guid: c884123088440284692e484efd2c360f, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -12752,51 +10871,6 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3497485227374402223, guid: c884123088440284692e484efd2c360f, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3497485227696335855, guid: c884123088440284692e484efd2c360f, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3497485227829497894, guid: c884123088440284692e484efd2c360f, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3497485227829497912, guid: c884123088440284692e484efd2c360f, type: 3}
-      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
-      value: 1801810542
-      objectReference: {fileID: 0}
-    - target: {fileID: 3497485227964304388, guid: c884123088440284692e484efd2c360f, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3497485227971471721, guid: c884123088440284692e484efd2c360f, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3497485228063958295, guid: c884123088440284692e484efd2c360f, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3497485228301425890, guid: c884123088440284692e484efd2c360f, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3497485228308958689, guid: c884123088440284692e484efd2c360f, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3497485228308958691, guid: c884123088440284692e484efd2c360f, type: 3}
-      propertyPath: m_text
-      value: "\u0410\u043A\u0442\u0438\u0432\u0430\u0446\u0438\u044F \u0437\u0430\u0445\u0432\u0430\u0442\u0430
-        \u0421\u0438\u043B\u043E\u0439"
-      objectReference: {fileID: 0}
-    - target: {fileID: 3497485228308958691, guid: c884123088440284692e484efd2c360f, type: 3}
-      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
-      value: 1801810542
-      objectReference: {fileID: 0}
     - target: {fileID: 3497485228358529809, guid: c884123088440284692e484efd2c360f, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -12804,72 +10878,6 @@ PrefabInstance:
     - target: {fileID: 3497485228358529809, guid: c884123088440284692e484efd2c360f, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3497485228358529822, guid: c884123088440284692e484efd2c360f, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3497485228396452627, guid: c884123088440284692e484efd2c360f, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3497485228396452629, guid: c884123088440284692e484efd2c360f, type: 3}
-      propertyPath: m_text
-      value: "\u0421\u043A\u043E\u0440\u043E\u0441\u0442\u044C \u043F\u043B\u0430\u0432\u043D\u043E\u0433\u043E
-        \u043F\u043E\u0432\u043E\u0440\u043E\u0442\u0430"
-      objectReference: {fileID: 0}
-    - target: {fileID: 3497485228396452629, guid: c884123088440284692e484efd2c360f, type: 3}
-      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
-      value: 1801810542
-      objectReference: {fileID: 0}
-    - target: {fileID: 3497485228413325709, guid: c884123088440284692e484efd2c360f, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3497485228492023388, guid: c884123088440284692e484efd2c360f, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3497485228611107002, guid: c884123088440284692e484efd2c360f, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3497485228611107004, guid: c884123088440284692e484efd2c360f, type: 3}
-      propertyPath: m_text
-      value: "\u0420\u0435\u0436\u0438\u043C \xAB\u0441\u0438\u0434\u044F / \u0441\u0442\u043E\u044F\xBB"
-      objectReference: {fileID: 0}
-    - target: {fileID: 3497485228611107004, guid: c884123088440284692e484efd2c360f, type: 3}
-      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
-      value: 1801810542
-      objectReference: {fileID: 0}
-    - target: {fileID: 3497485228685902927, guid: c884123088440284692e484efd2c360f, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3497485228705090539, guid: c884123088440284692e484efd2c360f, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3497485228705090541, guid: c884123088440284692e484efd2c360f, type: 3}
-      propertyPath: m_text
-      value: "\u0421\u043A\u043E\u0440\u043E\u0441\u0442\u044C \u043C\u0433\u043D\u043E\u0432\u0435\u043D\u043D\u043E\u0433\u043E
-        \u0440\u0430\u0437\u0432\u043E\u0440\u043E\u0442\u0430"
-      objectReference: {fileID: 0}
-    - target: {fileID: 3497485228705090541, guid: c884123088440284692e484efd2c360f, type: 3}
-      propertyPath: m_margin.x
-      value: -8.519676
-      objectReference: {fileID: 0}
-    - target: {fileID: 3497485228705090541, guid: c884123088440284692e484efd2c360f, type: 3}
-      propertyPath: m_margin.z
-      value: -23.226418
-      objectReference: {fileID: 0}
-    - target: {fileID: 3497485228705090541, guid: c884123088440284692e484efd2c360f, type: 3}
-      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
-      value: 1801810542
-      objectReference: {fileID: 0}
-    - target: {fileID: 3497485228765608962, guid: c884123088440284692e484efd2c360f, type: 3}
-      propertyPath: m_Layer
-      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3497485228765608965, guid: c884123088440284692e484efd2c360f, type: 3}
       propertyPath: m_AnchorMax.x
@@ -12882,30 +10890,6 @@ PrefabInstance:
     - target: {fileID: 3497485228765608965, guid: c884123088440284692e484efd2c360f, type: 3}
       propertyPath: m_AnchorMin.x
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3497485228795086522, guid: c884123088440284692e484efd2c360f, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3497485228795086524, guid: c884123088440284692e484efd2c360f, type: 3}
-      propertyPath: m_text
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3497485228795086524, guid: c884123088440284692e484efd2c360f, type: 3}
-      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
-      value: 1801810542
-      objectReference: {fileID: 0}
-    - target: {fileID: 3852774534117391865, guid: c884123088440284692e484efd2c360f, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4018361015034743377, guid: c884123088440284692e484efd2c360f, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4018361015780881185, guid: c884123088440284692e484efd2c360f, type: 3}
-      propertyPath: m_PresetInfoIsWorld
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4018361015780881361, guid: c884123088440284692e484efd2c360f, type: 3}
       propertyPath: Inputs
@@ -12919,26 +10903,6 @@ PrefabInstance:
       propertyPath: CameraRig
       value: 
       objectReference: {fileID: 22373475}
-    - target: {fileID: 4018361015780881373, guid: c884123088440284692e484efd2c360f, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4018361016183768576, guid: c884123088440284692e484efd2c360f, type: 3}
-      propertyPath: m_text
-      value: "\u041A\u0430\u043B\u0438\u0431\u0440\u043E\u0432\u043A\u0430 \u0432\u044B\u0441\u043E\u0442\u044B"
-      objectReference: {fileID: 0}
-    - target: {fileID: 4018361016183768576, guid: c884123088440284692e484efd2c360f, type: 3}
-      propertyPath: m_margin.y
-      value: -23.32111
-      objectReference: {fileID: 0}
-    - target: {fileID: 4018361016183768576, guid: c884123088440284692e484efd2c360f, type: 3}
-      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
-      value: 1801810542
-      objectReference: {fileID: 0}
-    - target: {fileID: 4018361016183768638, guid: c884123088440284692e484efd2c360f, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 4018361016754982190, guid: c884123088440284692e484efd2c360f, type: 3}
       propertyPath: m_Name
       value: UIManager
@@ -12987,126 +10951,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4976581023052184730, guid: c884123088440284692e484efd2c360f, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5148206727350556664, guid: c884123088440284692e484efd2c360f, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5435355361060895865, guid: c884123088440284692e484efd2c360f, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5471187555577602208, guid: c884123088440284692e484efd2c360f, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5677060978852650036, guid: c884123088440284692e484efd2c360f, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5756381093363089672, guid: c884123088440284692e484efd2c360f, type: 3}
-      propertyPath: m_text
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5756381093363089672, guid: c884123088440284692e484efd2c360f, type: 3}
-      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
-      value: 1801810542
-      objectReference: {fileID: 0}
-    - target: {fileID: 6033743375347685497, guid: c884123088440284692e484efd2c360f, type: 3}
-      propertyPath: m_text
-      value: "\u041F\u0430\u0443\u0437\u0430"
-      objectReference: {fileID: 0}
-    - target: {fileID: 6033743375347685497, guid: c884123088440284692e484efd2c360f, type: 3}
-      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
-      value: 1801810542
-      objectReference: {fileID: 0}
-    - target: {fileID: 6514669149575339086, guid: c884123088440284692e484efd2c360f, type: 3}
-      propertyPath: m_text
-      value: "\u0424\u0438\u043A\u0441\u0430\u0442\u043E\u0440 \u0437\u0430\u0445\u0432\u0430\u0442\u0430
-        \u043B\u0435\u0441\u043A\u0438 \u043E\u0441\u043B\u0430\u0431\u0435\u0432\u0430\u0435\u0442"
-      objectReference: {fileID: 0}
-    - target: {fileID: 6514669149575339086, guid: c884123088440284692e484efd2c360f, type: 3}
-      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
-      value: 1801810542
-      objectReference: {fileID: 0}
-    - target: {fileID: 7099341483417607613, guid: c884123088440284692e484efd2c360f, type: 3}
-      propertyPath: m_text
-      value: "\u0420\u0435\u0436\u0438\u043C \u0437\u0430\u0445\u0432\u0430\u0442\u0430
-        \u043F\u0440\u0430\u0432\u043E\u0439 \u0440\u0443\u043A\u043E\u0439"
-      objectReference: {fileID: 0}
-    - target: {fileID: 7099341483417607613, guid: c884123088440284692e484efd2c360f, type: 3}
-      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
-      value: 1801810542
-      objectReference: {fileID: 0}
-    - target: {fileID: 7713667471255090422, guid: c884123088440284692e484efd2c360f, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8414584504491113319, guid: c884123088440284692e484efd2c360f, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8741537233370662430, guid: c884123088440284692e484efd2c360f, type: 3}
-      propertyPath: m_text
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8741537233370662430, guid: c884123088440284692e484efd2c360f, type: 3}
-      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
-      value: 1801810542
-      objectReference: {fileID: 0}
-    - target: {fileID: 8760047217689576700, guid: c884123088440284692e484efd2c360f, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4018361015780881373, guid: c884123088440284692e484efd2c360f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 3497485228596465100}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c884123088440284692e484efd2c360f, type: 3}
---- !u!1 &3497485228596465098 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4018361015780881373, guid: c884123088440284692e484efd2c360f, type: 3}
-  m_PrefabInstance: {fileID: 3497485228596465097}
-  m_PrefabAsset: {fileID: 0}
---- !u!224 &3497485228596465099 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 4018361015780881187, guid: c884123088440284692e484efd2c360f, type: 3}
-  m_PrefabInstance: {fileID: 3497485228596465097}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &3497485228596465100
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3497485228596465098}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee10491ef6d5d1d49a270cf6b09bdc19, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Oculus.VR::OVROverlayCanvas
-  _mipmapMode: 0
-  _dynamicResolution: 1
-  _redrawResolutionThreshold: 2147483647
-  rectTransform: {fileID: 3497485228596465099}
-  maxTextureSize: 2048
-  manualRedraw: 0
-  renderInterval: 1
-  renderIntervalFrameOffset: 0
-  superSample: 0
-  layer: 5
-  opacity: 2
-  shape: 0
-  curveRadius: 1
-  overlapMask: 0
-  compositionMode: 1
-  _overlayEnabled: 1
 --- !u!1001 &4444703988530636783
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13116,11 +10965,11 @@ PrefabInstance:
     m_TransformParent: {fileID: 394944563}
     m_Modifications:
     - target: {fileID: 4444703988940069535, guid: 1ba7b2eef341dad4da3f5ff12480db09, type: 3}
-      propertyPath: 'Transforms.Array.data[1]'
+      propertyPath: Transforms.Array.data[1]
       value: 
       objectReference: {fileID: 6977904242286633326}
     - target: {fileID: 4444703990258378229, guid: 1ba7b2eef341dad4da3f5ff12480db09, type: 3}
-      propertyPath: 'Transforms.Array.data[1]'
+      propertyPath: Transforms.Array.data[1]
       value: 
       objectReference: {fileID: 6977904242286633326}
     - target: {fileID: 5142398447600174989, guid: 1ba7b2eef341dad4da3f5ff12480db09, type: 3}
@@ -13237,7 +11086,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3463430364408438575, guid: df4e90f729f159e4e8389e3e8fdd01a4, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
+      propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: e79e7e41a8d753c42a037f8b95b538fb, type: 2}
     m_RemovedComponents: []
@@ -13597,15 +11446,15 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6478646566715364772, guid: 2d85852d37d85bc4e805efc90f61d0f5, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
+      propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ec5abc8ac9343ab41bc7f26453a6a157, type: 2}
     - target: {fileID: 6478646566715364772, guid: 2d85852d37d85bc4e805efc90f61d0f5, type: 3}
-      propertyPath: 'm_Materials.Array.data[1]'
+      propertyPath: m_Materials.Array.data[1]
       value: 
       objectReference: {fileID: 2100000, guid: e58f5340d8d640746b1cda31cd438804, type: 2}
     - target: {fileID: 6478646566715364772, guid: 2d85852d37d85bc4e805efc90f61d0f5, type: 3}
-      propertyPath: 'm_Materials.Array.data[2]'
+      propertyPath: m_Materials.Array.data[2]
       value: 
       objectReference: {fileID: 2100000, guid: a678aaa62479e504698cda27edf4c585, type: 2}
     m_RemovedComponents: []
@@ -13636,8 +11485,8 @@ SceneRoots:
   - {fileID: 3497485228596465097}
   - {fileID: 554890349}
   - {fileID: 1353620538}
-  - {fileID: 1084475375}
   - {fileID: 22373467}
   - {fileID: 651925478}
   - {fileID: 6579604651283994508}
   - {fileID: 2120577053}
+  - {fileID: 1776917040}

@@ -588,7 +588,7 @@ namespace HurricaneVR.Framework.Core.Grabbers
             {
                 case SocketHoldType.Kinematic:
                 {
-                    grabbable.Rigidbody.linearVelocity = Vector3.zero;
+                    grabbable.Rigidbody.velocity = Vector3.zero;
                     grabbable.Rigidbody.angularVelocity = Vector3.zero;
                     grabbable.Rigidbody.collisionDetectionMode = CollisionDetectionMode.ContinuousSpeculative;
                     grabbable.Rigidbody.isKinematic = true;
@@ -601,8 +601,8 @@ namespace HurricaneVR.Framework.Core.Grabbers
                     _hadRigidBody = true;
                     _rbMass = grabbable.Rigidbody.mass;
                     _rbGravity = grabbable.Rigidbody.useGravity;
-                    _rbDrag = grabbable.Rigidbody.linearDamping;
-                    _rbAngularDrag = grabbable.Rigidbody.angularDamping;
+                    _rbDrag = grabbable.Rigidbody.drag;
+                    _rbAngularDrag = grabbable.Rigidbody.angularDrag;
 
                     if (Rigidbody)
                     {
@@ -635,8 +635,8 @@ namespace HurricaneVR.Framework.Core.Grabbers
 
                 rb.useGravity = _rbGravity;
                 rb.mass = _rbMass;
-                rb.linearDamping = _rbDrag;
-                rb.angularDamping = _rbAngularDrag;
+                rb.drag = _rbDrag;
+                rb.angularDrag = _rbAngularDrag;
             }
 
             if (rb)

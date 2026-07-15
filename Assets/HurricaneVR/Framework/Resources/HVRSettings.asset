@@ -11,7 +11,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0b3a39c3d29bcbf45b97a504fc1dedbe, type: 3}
   m_Name: HVRSettings
-  m_EditorClassIdentifier: HurricaneVR.Framework::HurricaneVR.Framework.Core.HVRSettings
+  m_EditorClassIdentifier: 
   LocalEditorRootDirectory: Assets\HurricaneVR\Framework\Editor\
   LocalRootDirectory: Assets\HurricaneVR\Framework\
   LocalResourcesDirectory: Assets\HurricaneVR\Framework\Resources\
